@@ -4,11 +4,9 @@ This code is designed to do resolved, matched mutli-filter aperture photometry o
 The code was originally developed for use in high-redshift clusters (see https://arxiv.org/abs/2404.07355), so apertures are limited to r_50, r_90, and r_kron. If other apertures are needed it will be easy to modify the code upon request.
 
 Installation:
-Download package and cd into directory it is opened in:
 
 ```bash
-python setup.py sdist bdist_wheel
-pip install dist/galaxyaper-1.0.0.tar.gz
+pip install GalaxyAper
 ```
 
 The example directory contains a script showing the workflow of this code. 
