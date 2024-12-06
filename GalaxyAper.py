@@ -48,6 +48,14 @@ CONTRAST = 0.001
 RMS = 0.004
 VERBOSE = True
 FILTER = 'F160W'
+ID_COL = 'id'
+RA_COL = 'ra'
+DEC_COL = 'dec'
+ZSPEC_COL = 'zspec'
+ZPHOT_COL = 'zfast'
+LMASS_COL = 'lmass'
+Z_LOW = 1.53
+Z_HIGH = 1.69
 
 def convolve_data2(data, kernel=KERNEL, size=SIZE):
     """
@@ -455,15 +463,6 @@ def srcor(x1in, y1in, x2in, y2in, dcr=1.5, magnitude=None, spherical=2, count=Fa
         return len(ind1), ind1, ind2
     else:
         return ind1, ind2
-
-ID_COL = 'id'
-RA_COL = 'ra'
-DEC_COL = 'dec'
-ZSPEC_COL = 'zspec'
-ZPHOT_COL = 'zfast'
-LMASS_COL = 'lmass'
-Z_LOW = 1.53
-Z_HIGH = 1.69
 
 def catalog_matching(catalog_file, GalaxyAper_output=None, id_col=ID_COL, ra_col=RA_COL, dec_col=DEC_COL, zspec_col=ZSPEC_COL,
                    zphot_col=ZPHOT_COL, lmass_col=LMASS_COL, z_low=Z_LOW, z_high=Z_HIGH, z_choice='zspec'):
