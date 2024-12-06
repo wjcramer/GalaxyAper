@@ -31,7 +31,7 @@ from matplotlib.patches import Ellipse
 README = 'README'
 
 # Output Formatting
-# Directory for RHT output
+# Directory for output
 OUTPUT = '.'
 if not os.path.isdir(OUTPUT):
     os.mkdir(OUTPUT)
